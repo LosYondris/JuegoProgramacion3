@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:id="@+id/id_fondoOriginar"
+    tools:context=".Inicio">
+
+   <!--las preguntas-->
+    <TextView
+        android:id="@+id/id_pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#030303"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--btn salir-->
+    <TextView
+        android:id="@+id/id_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@drawable/icono_flecha_atra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--btn adjuste-->
+    <TextView
+     android:id="@+id/id_adjutes"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginEnd="16dp"
+     android:layout_marginTop="8dp"
+     android:drawableLeft="@drawable/icono_adjuste"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+    <!--corazon a-->
+    <TextView
+        android:id="@+id/id_corazon_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/icono_corazone_rojo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--corazon b-->
+    <TextView
+        android:id="@+id/id_corazon_b"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/icono_corazone_rojo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--corazon c-->
+    <TextView
+        android:id="@+id/id_corazon_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/icono_corazone_rojo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--btn core-->
+    <TextView
+        android:id="@+id/btn_core"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/icono_core"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+ <!--btn tiempo-->
+    <TextView
+        android:id="@+id/id_tiempo_aut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/icono_time"
+        android:text=" 00:00"
+        android:textColor="#fff"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/id_salir"
+        app:layout_constraintStart_toEndOf="@+id/id_salir"
+        app:layout_constraintTop_toTopOf="parent" />
+
+ <!--puntos buenos-->
+    <TextView
+        android:id="@+id/id_pbueno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="8dp"
+        android:drawableRight="@drawable/icono_pbueno"
+        android:text="0 "
+        android:textColor="#fff"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/id_salir"
+        app:layout_constraintStart_toEndOf="@+id/id_salir"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
+
+ <!--puntos malos-->
+ <TextView
+     android:id="@+id/id_pmalo"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="8dp"
+     android:layout_marginStart="252dp"
+     android:layout_marginTop="8dp"
+     android:drawableRight="@drawable/icono_pmalo"
+     android:text="0 "
+     android:textColor="#fff"
+     android:textSize="26dp"
+     android:textStyle="bold"
+     app:layout_constraintBottom_toBottomOf="@+id/id_salir"
+     app:layout_constraintStart_toEndOf="@+id/id_salir"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.363" />
+
+</android.support.constraint.ConstraintLayout>
